@@ -45,7 +45,7 @@
                   <label class="form-check-label" for="permission{{ $value->id }}">{{ $value->name }}</label>
                 </div>
                 <br>
-                @if (in_array($value->id, [1, 5, 6, 10, 14, 15, 17, 20]))
+                @if (in_array($value->id, [1, 5, 9, 13, 17, 21, 27, 33]))
                   <hr>
                 @endif
               @endforeach

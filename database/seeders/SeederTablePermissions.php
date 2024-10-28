@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Permission; // Add this line
+use Spatie\Permission\Models\Permission;
 
 class SeederTablePermissions extends Seeder
 {
@@ -14,41 +14,46 @@ class SeederTablePermissions extends Seeder
     public function run(): void
     {
         $permisos = [
-            //Operaciones sobre la tabla roles
+            // Operaciones sobre la tabla roles
             'acciones-admin',
             'ver-rol',
             'crear-rol',
             'editar-rol',
             'borrar-rol',
 
-            //Operaciones
-            'ver-busquedas',
+            // Acciones usuarios
+            'ver-usuario',
+            'crear-usuario',
+            'editar-usuario',
+            'borrar-usuario',
 
-            //acciones expediente
-            'ver-expediente',
-            'crear-expediente',
-            'editar-expediente',
-            'borrar-expediente',
+            // Acciones pedidos
+            'ver-pedido',
+            'crear-pedido',
+            'editar-pedido',
+            'borrar-pedido',
 
-            //acciones proyecto
-            'ver-proyecto',
-            'crear-proyecto',
-            'editar-proyecto',
-            'borrar-proyecto',
+            // Acciones personal
+            'ver-personal',
+            'crear-personal',
+            'editar-personal',
+            'borrar-personal',
 
-            //Acciones internas
-            'acciones-internas',
+            // Acciones reportes
+            'ver-reporte',
+            'crear-reporte',
+            'editar-reporte',
+            'borrar-reporte',
 
-            'acciones-externas',
-
-            //Acciones para carpeta y archivo
-            'acciones-carpeta-archivo',
-            'acciones-eliminar-carpeta-archivo'
+            // Acciones platillos
+            'ver-platillo',
+            'crear-platillo',
+            'editar-platillo',
+            'borrar-platillo',
         ];
 
         foreach ($permisos as $permiso) {
             Permission::create(['name' => $permiso]);
         }
-
     }
 }
