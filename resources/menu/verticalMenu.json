@@ -47,8 +47,13 @@
       "submenu": [
         {
           "url": "/platillos",
-          "name": "Platillos",
+          "name": "Lista de platillos",
           "slug": "pages-account-settings-account"
+        },
+        {
+          "url": "/platillos_show",
+          "name": "Platillos mozo",
+          "slug": "platillos.showAll"
         },
         {
           "url": "/reporteplatillos",

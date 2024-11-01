@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SeederTablePermissions::class);
 
         $this->call(SuperAdminSeeder::class);
+
+        $this->call(PlatilloSeeder::class);
     }
 }
